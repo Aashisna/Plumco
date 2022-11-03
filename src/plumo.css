@@ -52,7 +52,7 @@ h1 h2 h3 h4 h5 h6{
     vertical-align: middle;
 }
 .hthird {
-    background-color: #EEEFED;
+    background-color:#FFFFFF;
     height: 15vh;
 }
 .e-btn--3d.-color-primary {
@@ -104,6 +104,10 @@ h1 h2 h3 h4 h5 h6{
     border-radius: 22px;
     color: white;
 }
+.navlist .dropdown:hover .dropdown-content {
+    position: absolute;
+    display:block;
+}
 .headlist{
     margin-top: 30px;
 }
@@ -129,6 +133,7 @@ h1 h2 h3 h4 h5 h6{
     min-width: 190px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-top: 7px;
   }
 
   .dropdown a:hover{
@@ -143,37 +148,107 @@ h1 h2 h3 h4 h5 h6{
     font-size: 16px;
     font-family: sans-serif;
   }
+  .first{
+    margin-top: 50px;
+  }
+  .last{
+    margin-bottom: 30px;
+  }
   .dropdown-content a:hover {text-decoration: underline; text-decoration-color: #0052da;}
   .dropdown-content li:hover{background-color: none;}
   .dropdown:hover .dropdown-content {display: block;}
-  .service{
-    margin-left: -4000px;
+
+.services{
+    margin-left: 150px;
   }
   .shop{
-    margin-left: -4500px;
+    margin-left: 250px;
   }
   .pages{
-    margin-left:-4000px;
-  }
-  .n{
-    position: fixed;
-    width:100%;
-    /* top:100px; */
-    margin-top: 0px;
-    top:50px;
-    scroll-margin-top:0px;
-    z-index: 999;
-    /* box-shadow: 2px 1px 5px rgb(204, 204, 204); */
-    /* box-shadow: 8px 8px 24px 5px rgb(248, 243, 243); */
-  }
-  .m{
+    margin-left: 320px;
+  } 
+  .blogs{
+    margin-left: 400px;
+  } 
+  .n1{
     position:sticky;
     width:100%;
+    /* top:100px; */
+    /* margin-top: 0px;
+    top:50px; */
     top:0;
     z-index: 999;
     /* box-shadow: 2px 1px 5px rgb(204, 204, 204); */
     /* box-shadow: 8px 8px 24px 5px rgb(248, 243, 243); */
   }
+  .n2{
+    position:sticky;
+    width:100%;
+    /* top:100px; */
+    /* margin-top: 0px;
+    top:50px; */
+    top:0;
+    z-index: 999;
+    /* box-shadow: 2px 1px 5px rgb(204, 204, 204); */
+    /* box-shadow: 8px 8px 24px 5px rgb(248, 243, 243); */
+  }
+  .n3{
+    position: sticky;
+    width:100%;
+    /* top:100px; */
+    /* margin-top: 0px;
+    top:50px; */
+    top:0;
+    z-index: 999;
+    /* box-shadow: 2px 1px 5px rgb(204, 204, 204); */
+    /* box-shadow: 8px 8px 24px 5px rgb(248, 243, 243); */
+  }
+  
+  .topnavs .search-containers button:hover {
+    background: #ccc;
+  }
+
+  .topnavs .search-containers button {
+    float: right;
+    display: block;
+    text-align: right;
+    background-color: #0052da;
+    margin-top: 15px;
+    margin-right: -22px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    color:#fff;
+    display:none;
+}
+
+.bgtoggler{
+    background-color: #243144;
+}
+
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+  }
+  .offcanvas {
+    margin-top: 65px;
+    background-color:#EEEFED;
+  }
+  .bg-primary{
+    --bs-bg-opacity: 0;
+  }
+  .navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: blue;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+    display:none;
+}
 
 
 /* body css */
@@ -204,7 +279,7 @@ h1 p{
     margin-left: -100px;
 } */
 
-.honemiddle::after {
+.homemiddle::after {
     content: "HELP";
     color: blue;
     font-size: 80px;
@@ -320,6 +395,14 @@ h2{
     border-radius: 10px;
     padding:30px 80px;
 }
+.ResidentialPlumbings{
+    background-color: #0052DA;
+    color:white;
+    border-radius: 10px;
+    padding:30px 80px;
+    display:none !important;
+    margin-right: 20px;
+}
 
 .body img {
     border-radius: 20px;
@@ -359,6 +442,12 @@ h2{
     height:600px;
     margin-top: 100px;
 }
+.blues {
+    background-color: blue;
+    height:1000px;
+    margin-top: 100px;
+    display:none;
+}
 
 h3 {
     color: #fff;
@@ -376,6 +465,7 @@ h3 {
 .Review{
     padding-left: -20px;
     padding-top: 50px;
+    margin-top: 150px;
 }
 
 .customer-review {
@@ -596,7 +686,6 @@ text-transform: uppercase;
 .onlinebooking 
 {
     color: #fff;
-    margin-bottom: 20px;
   }
   .video-btn img{
     height:100%;
@@ -632,7 +721,7 @@ text-transform: uppercase;
     width: 100%;
     height:50%;
     float:left;
-    margin-top: 210%;
+    margin-top: 150%;
     padding-left: calc(var(--bs-gutter-x) * .5);
 }
 .container-fluid {
@@ -664,7 +753,7 @@ text-transform: uppercase;
     color: red;
   }
   .form-group-4{
-    margin-left: -90px;
+    margin-left: -60px;
     margin-right: 34px;
   }
   option{
@@ -721,12 +810,14 @@ text-transform: uppercase;
   .footer{
      background-color: #253041;
   }
+
   .fs-5{
     background-color: #363d47;
     border-radius: 50%;
     padding: 10px;
 
   }
+
   .Ffirst li{
     display:inline-block;
     list-style: none;
@@ -735,6 +826,7 @@ text-transform: uppercase;
     font-weight: bold;
 
   }
+
   .fs1{
     margin-left: -18px;
   }
@@ -748,6 +840,54 @@ text-transform: uppercase;
     padding: 10px;
     text-align: center;
     color:white;
+}
+.footer-responsive .fecond li{
+    text-align: start;
+}
+
+element.style {
+}
+.text-light {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-light-rgb),var(--bs-text-opacity))!important;
+}
+.fs-4 {
+    font-size: calc(1.275rem + .3vw)!important;
+}
+<style>
+h2 {
+    font-family: sans-serif;
+}
+.h2, h2 {
+    font-size: calc(1.325rem + .9vw);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.footer-responsive.text-center {
+    text-align:start;
 }
 .fsecond{
     text-align: left;
@@ -784,6 +924,13 @@ text-align: justify;
     text-align: left;
     line-height: 2.5em;
 }
+.footer-responsive .fthird li{
+    list-style: none;
+    font-size: 16px;
+    margin-left: -10px;
+    text-align: left;
+    line-height: 2.5em;
+}
 .fthird a{
     color:white;
     line-height: 2.0em;
@@ -803,10 +950,12 @@ text-align: justify;
 .footerbottom{
     background-color: #222833;
 }
+
 .fbp{
     color: white;
     font-size: 16px;
 }
+
 
 /* About css */
 
@@ -1037,7 +1186,7 @@ position: relative;
     float: none;
     display: block;
     text-align: left;
-    width: 120%;
+    /* width: 120%; */
     margin: 0;
     padding: 14px;
     background:lightblue;
@@ -1050,7 +1199,7 @@ position: relative;
     text-align: right;
     background-color: #0052da;
     margin-top: -50px;
-    margin-right: -42px;
+    margin-right: 10px;
     padding: 10px 14px;
     border-radius: 5px;
     color:#fff;
@@ -1085,17 +1234,166 @@ position: relative;
   }
 .SSRight{
     text-align: justify;
-    width: 150%;
+    /* width: 150%; */
 }
 .tovnavimg img{
-    width:1500px;
+    /* width:1500px; */
     height:400px;
     padding: 100px;
 }
 
+/* ShopPage */
+.im1{
+    width:80%;
+}
+.shopPageBody{
+    background-color: #E4EEFF;
+}
+.shoppageIcon{
+    background-color: #E4EEFF;
+    padding:15px;
+    margin-right: 20px;
+
+}
+
+/* ErrorPage*/
+.erorPara{
+    width:60%;
+    margin: auto;
+}
+
+/* Signin Page*/
+.signInbutton{
+    padding:10px 175px;
+    font-size: 16px;
+    margin-left: -3px;
+}
+.signInbutton a:hover{
+color:white;
+}
+.signInbuttons{
+    padding:10px 115px;
+    font-size: 16px;
+    margin-left: -7px;  
+}
+.signInbuttons a:hover{
+    color:white;
+    }
+.SigninIcon{
+    padding:10px 35px;
+    border-radius: 5px;
+    background-color:#0052da;
+    margin-right:10px;
+    color: white;
+}
+.SigninIcons{
+    padding:10px 35px;
+    border-radius: 5px;
+    background-color: #0D6EFD;
+    margin-right:10px;
+    color: white;
+}
+.signinForm input[type=text]{
+width:73%;
+margin-left: 10px;
+}
+.signinForm input[type=email]{
+    width:73%;
+    margin-left: 10px;
+    }
+
+    /* ShopSingle */
+    .ShopSingleImage{
+        width:100%;
+    }
+   .ssreview{
+   margin-left: -30px;
+   }
+   .ssreview p{
+    margin-top: 3px;
+   }
+   .ssh3content::before{
+    content: "$200 ";
+    color:#0052DA;
+    font-size: 33px;
+    font-weight: 700;
+   }
+   /*Blogdetails*/
+   .card{
+    padding: 2em;
+    border:1px solid black;
+    text-align: center;
+   }
 /* responsive */
-@media(min-width: 550px) and (max-width:1000px){
-    .btn{display: none;}
+@media(min-width: 450px) and (max-width:990px){
     .nav{display: flex; justify-content: center;}
     .tp{display: none;}
+    .topnavs .search-containers button {
+        display:block;
+    }
+    .right{display: none;}
+    .navbar-toggler {display:inline;}
+    .navlist{display:none;}
+    .thirdbutton{display:none;}
+    /* .Commercialplumbing{width:100%;} */
+    .ResidentialPlumbing{display:none !important;} 
+    .ResidentialPlumbings{display:flex !important;} 
+    .Commercialplumbing {
+        background-color: #253041;
+        color: white;
+        border-radius: 10px;
+        padding: 30px 80px;
+        margin-right: 0px;
+    }
+    .para{width:100%;}
+    .details{display:block !important;}
+    .blue{display:none !important;}
+    .Reviewspara{width:100%; text-align: justify; text-align: center;}
+    .customer-review{margin: auto;}
+    .blues{display:block !important;}
+    .customer-details{width: 500px; margin-top: 20px;}
+    .form-buttons{display:block !important;}
+    .middleimage{
+        margin-bottom: -120px;
+    }
+    .icondisplay{
+        display:none !;
+    }
+    /* .footer{display:none !important;}
+    .footerbottom{display:none !important;} */
+    .footer{display:block !important;}
+    .footerbottom{display:block !important;}
+    .footer-responsive h2{
+        text-align:start;
+        margin-left: 25px;
+    }
+    .footer-responsive .fsecondicon{
+        margin-left: -50px;
+    }
+    .footer-responsive .footerfirstIcon{
+        width: 100%;
+    }
+    .footer-responsive .iconfooter{
+        margin-left: -260px;
+        margin-bottom: 40px;
+        margin-top:0px;
+    }
+    .footer-responsive .image{
+        margin-left: -170px;
+    }
+    .footer-responsive .fthird{
+        margin-top: 20px;
+    }
+    .footer-responsive .ffourth{
+        margin-top: 20px;
+    }
+    .footer-responsive .imagge{
+        margin-left: -15px;
+    }
+    .footer-responsive .pfirst{
+        display: none;
+    }
+    .footer-responsive .firstIcon::after{
+        content:'Crawfordsville, IN 47933';
+    }
  }

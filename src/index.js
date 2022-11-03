@@ -15,6 +15,15 @@ import Service from './Service';
 import ServiceStyle2 from './ServiceStyle2';
 import ServiceSingle from './ServiceSingle';
 import Cart from './Cart';
+import ShopPage from './ShopPage';
+import Testimonials from './Testimonials';
+import Error from './Error';
+import SignIn from './SignIn';
+import Forgot from './Forgot';
+import Signup from './Signup';
+import Pricing from './Pricing';
+import ShopSingle from './ShopSingle';
+import BlogDetails from './BlogDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +39,15 @@ root.render(
       <Route path="servicestyle2" element={<ServiceStyle2 />} />
       <Route path="servicesingle" element={<ServiceSingle />} />
       <Route path="cart" element={<Cart/>} />
+      <Route path="shoppage" element={<ShopPage/>} />
+      <Route path="testimonials" element={<Testimonials/>} />
+      <Route path="error" element={<Error/>} />
+      <Route path="signin" element={<SignIn/>} />
+      <Route path="forgot" element={<Forgot/>} />
+      <Route path="signup" element={<Signup/>} />
+      <Route path="pricing" element={<Pricing/>} />
+      <Route path="shopsingle" element={<ShopSingle/>} />
+      <Route path="blogdetails" element={<BlogDetails/>} />
     </Routes>
     <Footer/>
   </BrowserRouter>

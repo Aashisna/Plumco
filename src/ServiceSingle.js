@@ -25,7 +25,7 @@ export default function ServiceSingle() {
                     <div className="search-container">
                         <form action="/action_page.php">
                             <input type="text" placeholder="Search Post.." name="search" />
-                            <button type="submit"><i class="bi bi-search"></i></button>
+                            <button type="submit"><i className="bi bi-search"></i></button>
                         </form>
 
                         <div className='py-5 singleservice'>

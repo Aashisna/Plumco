@@ -82,9 +82,10 @@ function Body() {
         autoplaySpeed: 2000,
     }
     return (
-        <>
+        <div style={{overflow:'hidden'}}>
+
             <section className='banner'>
-                <div className=' d-flex justify-content-between container'>
+                <div className='d-flex justify-content-between container'>
                     <div className=' py-5 left '><p className='one py-4'>:: Highly Trained Staff</p>
                         <h1><p>Ready</p> <p className='honemiddle'>For</p> <p>You.</p></h1>
                         <p className='py-4 bannerPara'><p className='bannerPara'>We are certified company. We provide best</p> plumbing services for you & your company .</p>
@@ -100,7 +101,8 @@ function Body() {
                     <div className='right'><img src={BI} height="750px" className='py-3' /></div>
                 </div>
             </section>
-            <section>
+
+            <section >
                 <div className=' d-flex justify-content-around container py-5 CP'>
                     <div className='text-center Commercialplumbing d-flex justify-content-between container'>
                         <div><img src={CP} className='py-2' /></div>
@@ -111,8 +113,15 @@ function Body() {
                         <div><h2 className='py-3'>Residential Plumbing</h2></div>
                     </div>
                 </div>
+                <div className=' d-flex justify-content-around container py-2 CP'>
+                <div className='ResidentialPlumbings text-center d-flex justify-content-between container'>
+                        <div><img src={CP} className='py-2' /></div>
+                        <div><h2 className='py-3'>Residential Plumbing</h2></div>
+                        </div>
+                    </div>
             </section>
-            <section>
+
+            <section >
                 <div className=' d-flex justify-content-around'>
                     <div className='row text-center py-4 container'>
                         <h2>Best Service We Offer</h2>
@@ -122,8 +131,9 @@ function Body() {
                 </div>
 
             </section>
+
             <section>
-                <div className=' d-flex justify-content-around container py-4'>
+                <div className=' d-flex justify-content-around container py-4 details '>
                     <div className='body '><img src={six} />
                         <h2 className='bodycontent'><a href="#">Kitchen Plumbing</a></h2>
                         <p className='bodycontent'>Electronic typesetting rema essentially unchanged was popularised.</p>
@@ -138,7 +148,7 @@ function Body() {
                         <p className='bodycontent'>Electronic typesetting rema essentially unchanged was popularised.</p>
                         <a href="#" className='bodycontent'>READ MORE <i className="bi bi-chevron-double-right px-3"></i></a></div>
                 </div>
-                <div className=' d-flex justify-content-around container pb-5'>
+                <div className=' d-flex justify-content-around container pb-5 details'>
                     <div className='body '><img src={four} />
                         <h2 className='bodycontent'><a href="#">Bathroom Plumbing</a></h2>
                         <p className='bodycontent'>Electronic typesetting rema essentially unchanged was popularised.</p>
@@ -149,20 +159,21 @@ function Body() {
                         <p className='bodycontent'>Electronic typesetting rema essentially unchanged was popularised.</p>
                         <a href="#" className='bodycontent'>READ MORE <i className="bi bi-chevron-double-right px-3"></i></a>
                     </div>
-                    <div className='body '><img src={six} />
+                    <div className='body middleimage'><img src={six} />
                         <h2 className='bodycontent'><a href="#">Remodelling Services</a></h2>
                         <p className='bodycontent'>Electronic typesetting rema essentially unchanged was popularised.</p>
                         <a href="#" className='bodycontent'>READ MORE <i className="bi bi-chevron-double-right px-3"></i></a>
                     </div>
                 </div>
             </section>
+
             <section className='blue mt-5'>
                 <div className=' d-flex justify-content-around container'>
                     <div className='Review'>
                         <div className='Reviews'>
-                            <h3 className='text-light fs-2'>We Are Provide Always Different From Other Services.</h3>
+                            <h3 className='text-light fs-2 w-100 fw-bold'>We Are Provide Always Different From Other Services.</h3>
                         </div>
-                        <div className='customer-review d-flex justify-content-around container'>
+                        <div className='customer-review d-flex justify-content-around container pt-5'>
                             <div>
                                 <h2>89K</h2>
                             </div>
@@ -224,6 +235,76 @@ function Body() {
                     </div>
                 </div>
             </section>
+            
+            <section className='blues mt-5'>
+                <div className=' container'>
+                    <div className='Review '>
+                        <div className='Reviews'>
+                            <h3 className='text-light fs-2 Reviewspara'>We Are Provide Always Different From Other Services.</h3>
+                        </div>
+                        <div className='customer-review container d-flex justify-content-around'>
+                            <div>
+                                <h2>89K</h2>
+                            </div>
+                            <div>
+                                <ul className='customer-review-star'>
+                                    <li><i className="bi bi-star-fill star"></i></li>
+                                    <li><i className="bi bi-star-fill star"></i></li>
+                                    <li><i className="bi bi-star-fill star"></i></li>
+                                    <li><i className="bi bi-star-fill star"></i></li>
+                                    <li><i className="bi bi-star st"></i></li>
+                                </ul>
+                                < h5 className='text-light CRtext'>Customer Review</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='customer-details py-5'>
+                        <div className='customer-details1'>
+                            <div className='d-flex justify-content-around '>
+                                <div className='d-flex justify-content-around '>
+                                    <div className='pe-4'>
+                                        <img src={blue1} />
+                                    </div>
+                                    <div className='text-light details1'>
+                                        <h2 className=''>200</h2>
+                                        <h5 className='text-light details'>Running Projects</h5>
+                                    </div>
+                                </div>
+                                <div className='d-flex justify-content-around '>
+                                    <div className='pe-4'>
+                                        <img src={blue2} />
+                                    </div>
+                                    <div className='text-light details1'>
+                                        <h2>85+</h2>
+                                        <h5 className='text-light details'>Team Members</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='d-flex justify-content-around py-5'>
+                                <div className='d-flex justify-content-around '>
+                                    <div className='pe-4'>
+                                        <img src={blue3} />
+                                    </div>
+                                    <div className='text-light details1'>
+                                        <h2>39K</h2>
+                                        <h5 className='text-light details'>Happy Clients</h5>
+                                    </div>
+                                </div>
+                                <div className='d-flex justify-content-around '>
+                                    <div className='pe-4'>
+                                        <img src={blue4} />
+                                    </div>
+                                    <div className='text-light details1'>
+                                        <h2>45+</h2>
+                                        <h5 className='text-light details'>Award Winning</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section>
                 <div className=' d-flex justify-content-around'>
                     <div className='row text-center py-5 container'>
@@ -233,8 +314,9 @@ function Body() {
                     </div>
                 </div>
             </section>
+
             <section className='container'>
-                <div className=' d-flex justify-content-around pt-3'>
+                <div className=' d-flex justify-content-around pt-3 details'>
                     <div className='body1 px-3'><img src={twelve} />
                         <h3>Water Line Repair</h3>
                         <p>Plumbing</p>
@@ -248,7 +330,7 @@ function Body() {
                         <p>Plumbing</p>
                     </div>
                 </div>
-                <div className=' d-flex justify-content-around pb-1'>
+                <div className=' d-flex justify-content-around pb-1 details'>
                     <div className='px-3 body1'><img src={nine} />
                         <h3 className=''>Water Line Repair</h3>
                         <p>Plumbing</p>
@@ -265,6 +347,7 @@ function Body() {
                 <div className='thirdbuttons'><a className='thirdbtns' href='/contact'>View All Projects</a>
                 </div>
             </section >
+            
             <section className='dedicatedmembers pt-4'>
                 <div className=' d-flex justify-content-around'>
                     <div className='row text-center py-5 container'>
@@ -337,35 +420,36 @@ function Body() {
                         </div>
                     </div>
                 </div>
-                <div className='d-flex justify-content-around my-5'>
+                <div className='d-flex justify-content-around my-5 details'>
                     <div className='col-lg-6 onlinebooking'>
                         <div className=' d-flex justify-content-around'>
                             <div className='tm1'>
-                                <img src={tm1} className=""/>
+                                <img src={tm1}/>
                             </div>
                             <div className='title py-5 container'>
-                            <form action="/action_page.php">
+                            {/* <form action="/action_page.php"> */}
                                 <div className='d-flex justify-content-around container'>
                                     <span className=''>Online Booking</span></div>
                                     <div className='d-flex justify-content-around container'>
                                     <h2 className='py-3'>Online Booking For Appointments.</h2>
                                 </div>
+                                <form action="/action_page.php">
                                     <div className='d-flex justify-content-around container'>
                                         <div className='form-group'>
                                             <label className='mb-2'>Full name here*</label>
-                                            <input type='text' name='name' className='form control py-3 inputbackground' value='' placeholder='Your Name' required></input>
+                                            <input type='text' name='name' className='form control py-3 inputbackground'  placeholder='Your Name' required></input>
                                             <div className="errorMessage mb-3">The name field is required.</div>
                                         </div>
                                         <div className='form-group'>
                                             <label className='mb-2'>Email here*</label>
-                                            <input type='text' name='name' className='form control py-3 inputbackground' value='' placeholder='Your Email' required></input>
+                                            <input type='text' name='name' className='form control py-3 inputbackground' placeholder='Your Email' required></input>
                                             <div className="errorMessage">The email field is required.</div>
                                         </div>
                                     </div>
                                 <div className='d-flex justify-content-around container'>
                                     <div className='form-group'>
                                         <label className='mb-2 '>Contact Number*</label>
-                                        <input type='text' name='name' className='form control py-3 inputbackground' value='' placeholder='Phone' required></input>
+                                        <input type='text' name='name' className='form control py-3 inputbackground' placeholder='Phone' required></input>
                                         <div className="errorMessage">The phone field is required.</div>
                                     </div>
                                     <div className='form-group form-group-4'>
@@ -384,7 +468,8 @@ function Body() {
                                     <textarea placeholder='Message' rows={6} className='form-control mt-3 inputbackground'></textarea>
                                 </div>
                                 <div className="errorMessage selectError">The subject field is required.</div>
-                                <div className='thirdbutton'><a className='thirdbtn'>GET AN APPOINTMENT</a>
+                                <div className=''>
+                                <button className='btn btn-primary thirdbutton thirdbtn form-buttons' type='submit'>GET AN APPOINTMENT</button>
                             </div>
                             </form>
                             </div>
@@ -393,7 +478,7 @@ function Body() {
                     </div>
 
                     <div className='container-fluid'>
-                        <div className='video-btn'>
+                        <div className='video-btn'style={{height:'100%'}}>
                         <a href="https://youtu.be/GVKL4w7Wzu8?list=RDGVKL4w7Wzu8">
                        <p className='bannerVideobutton1s'> <i className="bi bi-caret-right-fill fs-2 bannerVideobuttons"></i></p></a>
                             <img src={tm} />
@@ -401,6 +486,7 @@ function Body() {
                     </div>
                 </div>
             </section>
+            
             <section className='peopleSay'>
                 <div className=' d-flex justify-content-around'>
                     <div className='row text-center py-5 container'>
@@ -410,7 +496,8 @@ function Body() {
                     </div>
                 </div>
             </section>
-            <section>
+
+            <section className='peopleSay'>
                 <div className=' d-flex justify-content-around'>
                     <div className='container Sslider'>
                         <div className='row'>
@@ -474,7 +561,8 @@ function Body() {
                     </div>
                 </div>
             </section>
-            <section>
+
+            <section className=''>
                 <div className=' d-flex justify-content-around blast'>
                     <div className='container'>
                         <div className='row text-center py-5 container'>
@@ -482,7 +570,7 @@ function Body() {
                             <p className='py-3 para'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 has been the industry's standard dummy text ever since the 1500s.</p>
                         </div>
-                        <div className='d-flex justify-content-around  py-3'>
+                        <div className='d-flex justify-content-around  py-3 details'>
 
                             <div className='newblog'><img src={NB1} />
                                 <div className='bg-light'>
@@ -509,7 +597,7 @@ function Body() {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 export default Body;
